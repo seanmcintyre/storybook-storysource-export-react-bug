@@ -1,0 +1,48 @@
+{
+    "name": "storybook-storysource-export-react-bug",
+    "homepage": "https://github.vimeows.com/pages/vimeo/iris/master/",
+    "version": "0.0.1",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "sideEffects": false,
+    "devDependencies": {
+        "@babel/core": "^7.7.2",
+        "@babel/plugin-proposal-export-default-from": "^7.5.2",
+        "@babel/preset-typescript": "^7.7.2",
+        "@nox/addon-themes": "^1.0.1",
+        "@storybook/addon-a11y": "^5.2.6",
+        "@storybook/addon-jest": "^5.2.6",
+        "@storybook/addon-knobs": "^5.2.6",
+        "@storybook/addon-notes": "^5.2.6",
+        "@storybook/addon-options": "^5.2.6",
+        "@storybook/addon-storyshots": "^5.2.6",
+        "@storybook/addon-storysource": "^5.2.6",
+        "@storybook/addon-viewport": "^5.2.6",
+        "@storybook/addons": "^5.2.6",
+        "@storybook/components": "^5.2.6",
+        "@storybook/core-events": "^5.2.6",
+        "@storybook/react": "^5.2.6",
+        "@storybook/theming": "^5.2.6",
+        "@types/react-dom": "^16.9.4",
+        "@types/react": "*",
+        "@types/styled-components": "^4.4.0",
+        "babel-plugin-require-context-hook": "^1.0.0",
+        "circular-dependency-plugin": "^5.2.0",
+        "polished": "^3.4.1",
+        "prettier": "^1.19.1",
+        "react-dom": "16.10.2",
+        "react": "16.10.2",
+        "styled-components": "beta",
+        "ts-loader": "^6.2.1",
+        "typescript-plugin-styled-components": "^1.4.3",
+        "typescript": "3.7.2"
+    },
+    "scripts": {
+        "build-styleguide": "build-storybook -c .storybook -o build-styleguide",
+        "storybook": "start-storybook -p 9001 -c .storybook --ci"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.vimeows.com/Vimeo/iris.git"
+    }
+}
