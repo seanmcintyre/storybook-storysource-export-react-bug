@@ -1,1 +1,0 @@
-export { VimeoV } from './VimeoV';

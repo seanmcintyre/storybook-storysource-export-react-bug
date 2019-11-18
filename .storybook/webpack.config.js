@@ -15,6 +15,14 @@ module.exports = ({ config, mode }) => {
           }),
         },
       },
+      {
+        loader: require.resolve(
+          '@storybook/addon-storysource/loader',
+        ),
+        options: {
+          parser: 'typescript',
+        },
+      },
     ],
   });
 

@@ -1,6 +1,24 @@
 import React, { forwardRef, Ref, SVGAttributes } from 'react';
 
-export const VimeoV = forwardRef(
+export function Test(props) {
+  return (
+    <div {...props}>
+      <VimeoV />
+    </div>
+  );
+}
+
+//
+// When using @storybook/addon-storysource/loader
+// with a custom webpack config
+//
+// export const VimeoV = forwardRef(
+// ERROR: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+//
+// const VimeoV = forwardRef(
+// WORKS
+//
+const VimeoV = forwardRef(
   (props: SVGAttributes<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg viewBox="0 0 20 17" ref={ref} {...props}>
       <path
